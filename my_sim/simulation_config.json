@@ -22,7 +22,7 @@
       "module": "IClamp",
       "node_set": "all",
       "gids": "all",
-      "amp": 0.09,
+      "amp": 0.04,
       "delay": 500.0,
       "duration": 1000.0
     }
