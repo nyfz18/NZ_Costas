@@ -1,0 +1,84 @@
+{
+  "network": "/Users/ninazhang/Desktop/NZ/my_sim02/circuit_config.json",
+  "simulation": "/Users/ninazhang/Desktop/NZ/my_sim02/simulation_config.json",
+  "config_path": "/Users/ninazhang/Desktop/NZ/my_sim02/config.json",
+  "config_dir": "/Users/ninazhang/Desktop/NZ/my_sim02",
+  "components": {
+    "mechanisms_dir": "/Users/ninazhang/Desktop/NZ/my_sim02/components/mechanisms",
+    "filter_models_dir": "/Users/ninazhang/Desktop/NZ/my_sim02/components/filter_models",
+    "morphologies_dir": "/Users/ninazhang/Desktop/NZ/my_sim02/components/morphologies",
+    "__pycache___dir": "/Users/ninazhang/Desktop/NZ/my_sim02/components/__pycache__",
+    "synaptic_models_dir": "/Users/ninazhang/Desktop/NZ/my_sim02/components/synaptic_models",
+    "biophysical_neuron_models_dir": "/Users/ninazhang/Desktop/NZ/my_sim02/components/biophysical_neuron_models",
+    "templates_dir": "/Users/ninazhang/Desktop/NZ/my_sim02/components/templates",
+    "point_neuron_models_dir": "/Users/ninazhang/Desktop/NZ/my_sim02/components/point_neuron_models"
+  },
+  "networks": {
+    "nodes": [
+      {
+        "nodes_file": "/Users/ninazhang/Desktop/NZ/my_sim02/network/cortex_nodes.h5",
+        "node_types_file": "/Users/ninazhang/Desktop/NZ/my_sim02/network/cortex_node_types.csv"
+      },
+      {
+        "node_types_file": "/Users/ninazhang/Desktop/NZ/my_sim02/network/mthalamus_node_types.csv",
+        "nodes_file": "/Users/ninazhang/Desktop/NZ/my_sim02/network/mthalamus_nodes.h5"
+      }
+    ],
+    "edges": [
+      {
+        "edge_types_file": "/Users/ninazhang/Desktop/NZ/my_sim02/network/mthalamus_cortex_edge_types.csv",
+        "edges_file": "/Users/ninazhang/Desktop/NZ/my_sim02/network/mthalamus_cortex_edges.h5"
+      }
+    ],
+    "gap_juncs": []
+  },
+  "target_simulator": "NEURON",
+  "run": {
+    "tstart": 0.0,
+    "tstop": 1000.0,
+    "dt": 0.001,
+    "dL": 20.0,
+    "spike_threshold": -15.0,
+    "nsteps_block": 5000
+  },
+  "conditions": {
+    "celsius": 34.0,
+    "v_init": -80.0
+  },
+  "inputs": {
+    "mthalamus_spikes": {
+      "input_type": "spikes",
+      "module": "sonata",
+      "input_file": "/Users/ninazhang/Desktop/NZ/my_sim02/inputs/neuropixel_electrode_1um.csv",
+      "node_set": "mthalamus"
+    }
+  },
+  "output": {
+    "log_file": "/Users/ninazhang/Desktop/NZ/my_sim02/output/log.txt",
+    "output_dir": "/Users/ninazhang/Desktop/NZ/my_sim02/output",
+    "spikes_file": "/Users/ninazhang/Desktop/NZ/my_sim02/output/spikes.h5"
+  },
+  "reports": {
+    "v_report": {
+      "variable_name": "v",
+      "cells": "all",
+      "module": "membrane_report",
+      "sections": "soma"
+    },
+    "cai_report": {
+      "variable_name": "cai",
+      "cells": "all",
+      "module": "membrane_report",
+      "sections": "soma"
+    }
+  },
+  "node_sets_file": "/Users/ninazhang/Desktop/NZ/my_sim02/node_sets.json",
+  "node_sets": {
+    "biophysical_nodes": {
+      "model_type": "biophysical"
+    },
+    "point_nodes": {
+      "model_type": "point_process"
+    }
+  }
+}
