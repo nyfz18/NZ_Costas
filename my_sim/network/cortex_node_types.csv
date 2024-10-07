@@ -1,2 +1,2 @@
-node_type_id model_type potential morphology cell_name model_template dynamics_params model_processing
-100 biophysical exc reconstruction.swc 626170421 ctdb:Biophys1.hoc fit_parameters.json aibs_perisomatic
+node_type_id dynamics_params morphology model_processing cell_name model_type model_template potential
+100 fit_parameters.json reconstruction.swc aibs_perisomatic 626170421 biophysical ctdb:Biophys1.hoc exc
