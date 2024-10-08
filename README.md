@@ -8,8 +8,10 @@ Selected cell model: neuronal model `626170421` from allen SDK database.
 
 `my_sim02` directory and `sim2.ipynb` simulates and generates an extracellular spike waveform data set. The input for the external stimuli were provided from `neuropixel_electrode_1um.csv`. Membrane potential and calcium concentration were recorded and graphed.
 
-`sim2_task4.ipynb` is an analysis on the extracellular AP waveform. It extracts features such as the amplitude, half-width, and EAP. 
+`sim2_task4.ipynb` is a continuation of the second simulation, and is an analysis on the extracellular AP waveform. It extracts features such as the amplitude, half-width, and EAP. 
 
 `task3_4_analysis.ipynb` analyzes the graphs and data that were gathered from the experimentation of the second simulation (`my_sim02`)
 
 `model_3D.ipynb` is the stretch goal. 
+
+`images` holds the graphs for the various experiments. `626170421` is the files from the original download of the allen SDK database. 
