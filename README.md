@@ -15,8 +15,11 @@ Selected cell model: neuronal model `626170421` from allen SDK database.
 `stretch.ipynb` is the stretch goal. The animation is saved as `somatic_v_dynamics.mp4`. With `matplotlib` and its animation feature, I created an animation of a current injection with these following parameters: 
 
 `amp` = 0.09 nA 
+
 `delay` = 200 ms 
+
 `duration of current` = 300 ms 
+
 `total simulation` = 500 ms 
 
 `stretch_analysis.ipynb` is the analysis of the stretch goal from `stretch.ipynb` and its output, `somatic_v_dynamics.mp4`. 
