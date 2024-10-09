@@ -22,6 +22,6 @@ Selected cell model: neuronal model `626170421` from allen SDK database.
 
 `total simulation` = 500 ms 
 
-`stretch_analysis.ipynb` is the analysis of the stretch goal from `stretch.ipynb` and its output, `somatic_v_dynamics.mp4`. 
+`stretch_analysis.ipynb` is the analysis of the stretch goal from `stretch.ipynb` and its output, `somatic_v_dynamics.mp4`. It's best to play the animation at 2x speed. 
 
 `images` holds the graphs for the various experiments. `626170421` is the files from the original download of the allen SDK database. 
